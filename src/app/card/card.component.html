@@ -1,0 +1,10 @@
+<h1>My App</h1>
+<p>card works!</p>
+<button>Olá mundo!</button>
+<ul>
+  <!-- construiu um LI para cada item que foi passado pela simulação da API no typescipt -->
+  <!-- Com o uso desse index tornamos o nosso elemento rastreado para podermos remover um item ou adicionar de fomar dinamicamente -->
+  <li *ngFor="let p of produtos; let i = index" (click)="remover(i)">{{i}} - {{p}}</li>
+  <!-- conceito de REATIVIDADE -->
+  <button (click)="adicionar()">Adicionar</button>
+</ul>
