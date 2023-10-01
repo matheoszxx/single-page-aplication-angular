@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
+  //Propriedades
   produtos: string[] = []
+  menuType: string = "superUsersaf"
 
   constructor() {
     //simulação de como se tivesse buscando os produtos de dentro de uma API
@@ -24,5 +26,6 @@ export class CardComponent implements OnInit {
     //excluindo um item apartir do indice dele ao clicar em cima do item
     this.produtos.splice(index, 1)
   }
+
 
 }
