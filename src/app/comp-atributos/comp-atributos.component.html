@@ -8,8 +8,16 @@
 <button (click)="adicionarLista()">Salvar Item</button>
 
 <ul>
-	<li *ngFor="let p of lista;">{{p}}</li>
+	<li *ngFor="let elemento of lista;">{{elemento}}</li>
 </ul>
+<hr>
 
+<ng-template [ngIf]="isEnableBlock">
+	<a href="#">FINALIZAR COMPRA</a>
+</ng-template>
+<br>
 
+<ng-template [ngIf]="isEnableBlock">
+	<a href="#">ADICIONAR NO CARRINHO</a>
+</ng-template>
 <hr>
