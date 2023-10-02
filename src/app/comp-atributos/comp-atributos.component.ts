@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CompAtributosComponent implements OnInit {
   //propriedade
   estilo:string = ""
+	corFundo:string = "red"
+	corDaFonte:string = "purple"
   constructor() { }
 
   ngOnInit(): void {
